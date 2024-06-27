@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="../src/image/png"
+      sizes="32x32"
+      href="src/favicon-32x32.png"
+    />
+
+    <title>Memory Cards</title>
+  </head>
+  <body>
+    <button id="clear" class="btn btn-clear">
+      <i class="fa fa-trash"></i> Clear Cards
+    </button>
+    <header class="header">
+      <h1>Memory Cards</h1>
+      <button id="show" class="btn btn-small">
+        <i class="fa fa-plus"></i> Add new card
+      </button>
+    </header>
+
+    <section id="cards-container" class="cards-container">
+      <!-- <div class="card active">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p>Lorem ipsum dolor sit amet?</p>
+          </div>
+          <div class="inner-card-back">
+            <p>Consectetur, adipisicing elit. Officiis, magnam..</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p>alalal</p>
+          </div>
+          <div class="inner-card-back">
+            <p>Consectetur, adipisicing elit. Officiis, magnam..</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <nav class="navigation">
+      <button id="prev" class="nav-item nav-item-prev">
+        <i class="fa fa-arrow-left"></i>
+      </button>
+
+      <p id="current"></p>
+      <button id="next" class="nav-item nav-item-next">
+        <i class="fa fa-arrow-right"></i>
+      </button>
+    </nav>
+
+    <section id="add-container" class="add-container">
+      <div class="add-container-inner">
+        <div class="section-header">
+          <h1>Add New Card</h1>
+          <button id="hide" class="btn btn-small btn-hide">
+            <i class="fa fa-close"></i>
+          </button>
+        </div>
+
+        <div class="form-group">
+          <label for="question">Question</label>
+          <textarea id="question" placeholder="Enter question..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="anwser">Anwser</label>
+          <textarea id="anwser" placeholder="Enter anwser..."></textarea>
+        </div>
+        <button id="add-card" class="btn btn-add-card">
+          <i class="fa fa-plus"></i> Add card
+        </button>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/f347a2f41e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
